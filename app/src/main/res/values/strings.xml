@@ -1,16 +1,35 @@
 <resources>
-    <string name="app_name">Grubbbo</string>
+    <string name="app_name">MyDribbbo</string>
 
-    <!-- Strings related to login -->
-    <string name="prompt_email">Email</string>
-    <string name="prompt_password">Password (optional)</string>
-    <string name="action_sign_in">Sign in or register</string>
-    <string name="action_sign_in_short">Sign in</string>
-    <string name="error_invalid_email">This email address is invalid</string>
-    <string name="error_invalid_password">This password is too short</string>
-    <string name="error_incorrect_password">This password is incorrect</string>
-    <string name="error_field_required">This field is required</string>
-    <string name="permission_rationale">"Contacts permissions are needed for providing email
-        completions."
-    </string>
+    <string name="title_home">MyDribbbo</string>
+    <string name="title_likes">Likes</string>
+    <string name="title_buckets">Buckets</string>
+
+    <string name="drawer_menu_home">Home</string>
+    <string name="drawer_menu_likes">Likes</string>
+    <string name="drawer_menu_buckets">Buckets</string>
+
+    <string name="login">Log in</string>
+    <string name="logout">Log out</string>
+    <string name="save">Save</string>
+    <string name="share">Share</string>
+    <string name="user_profile_picture">User profile picture</string>
+
+    <string name="open_drawer">open drawer</string>
+    <string name="close_drawer">close drawer</string>
+
+    <string name="new_bucket_title">New bucket</string>
+    <string name="new_bucket_create">Create</string>
+    <string name="new_bucket_cancel">Cancel</string>
+    <string name="new_bucket_name">Bucket name</string>
+    <string name="new_bucket_descripiton">Bucket description</string>
+
+    <string name="shot_detail_loading_buckets">Loading buckets, just one second…</string>
+    <string name="shot_image">Shot image</string>
+
+    <string name="shot_count">{0,choice,0#0 shot|1#1 shot|1&lt;{0} shots}</string>
+    <string name="auth_activity_title">Log into Dribbble</string>
+
+    <string name="activity_login_btn_text">Log into Dribbble</string>
+    <string name="activity_login_icon">Dribbble icon</string>
 </resources>
