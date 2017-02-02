@@ -8,10 +8,10 @@ import android.util.Log;
 
 import com.google.gson.JsonSyntaxException;
 import com.google.gson.reflect.TypeToken;
-import com.godwinxunwang.grubbbo.dribbble.model.Bucket;
-import com.godwinxunwang.grubbbo.dribbble.model.Shot;
-import com.godwinxunwang.grubbbo.dribbble.model.User;
-import com.godwinxunwang.grubbbo.dribbble.utils.ModelUtils;
+import com.godwinxunwang.grubbbo.model.Bucket;
+import com.godwinxunwang.grubbbo.model.Shot;
+import com.godwinxunwang.grubbbo.model.User;
+import com.godwinxunwang.grubbbo.utils.ModelUtils;
 
 import java.io.IOException;
 import java.util.List;
