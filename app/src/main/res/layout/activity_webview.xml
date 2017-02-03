@@ -4,18 +4,16 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-
-    <include layout = "@layout/toolbar" />
-
+    <!--
     <ProgressBar
         android:id="@+id/progress_bar"
         android:layout_width="match_parent"
-        android:layout_height="3dp"
+        android:layout_height="5dp"
         style="@android:style/Widget.ProgressBar.Horizontal"/>
-
-    <WebView
-        android:id="@+id/webview"
+    -->
+    <WebView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/webview_login"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"></WebView>
+        android:layout_height="match_parent"/>
 
 </LinearLayout>

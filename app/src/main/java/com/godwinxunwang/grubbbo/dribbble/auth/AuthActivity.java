@@ -24,23 +24,23 @@ public class AuthActivity extends AppCompatActivity {
     public static final String KEY_URL = "url";
     public static final String KEY_CODE = "code";
 
-    @BindView(R.id.progress_bar) ProgressBar progressBar;
-    @BindView(R.id.webview) WebView webView;
-    @BindView(R.id.toolbar)
-    Toolbar toolbar;
+    // @BindView(R.id.progress_bar) ProgressBar progressBar;
+
+    // @BindView(R.id.webview_login) WebView webView;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_webview);
         ButterKnife.bind(this);
-
-        setSupportActionBar(toolbar);
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        setTitle(getString(R.string.auth_activity_title));
-
-        progressBar.setMax(100);
-
+        setContentView(R.layout.activity_webview);
+        // ProgressBar progressBar = (ProgressBar)findViewById(R.id.progress_bar);
+        WebView webView = (WebView)findViewById(R.id.webview_login);
+        // Toolbar toolBar = (Toolbar) findViewById(R.id.toolbar);
+        // setSupportActionBar(toolBar);
+        // getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        // setTitle(getString(R.string.auth_activity_title));
+        // progressBar.setMax(100);
         webView.setWebViewClient(new WebViewClient() {
 
             @Override
@@ -55,7 +55,7 @@ public class AuthActivity extends AppCompatActivity {
 
                 return super.shouldOverrideUrlLoading(view, url);
             }
-
+            /*
             @Override
             public void onPageStarted(WebView view, String url, Bitmap favicon) {
                 progressBar.setVisibility(View.VISIBLE);
@@ -66,15 +66,16 @@ public class AuthActivity extends AppCompatActivity {
             public void onPageFinished(WebView view, String url) {
                 progressBar.setVisibility(View.GONE);
             }
+            */
         });
-
+        /*
         webView.setWebChromeClient(new WebChromeClient() {
             @Override
             public void onProgressChanged(WebView view, int newProgress) {
                 progressBar.setProgress(newProgress);
             }
         });
-
+        */
         String url = getIntent().getStringExtra(KEY_URL);
         webView.loadUrl(url);
     }

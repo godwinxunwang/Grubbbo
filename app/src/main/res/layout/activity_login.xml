@@ -5,20 +5,29 @@
     android:layout_height="match_parent"
     android:gravity="center"
     android:orientation="vertical"
-    android:background="@color/colorPrimary">
+    android:background="@color/colorPrimary"
+    android:weightSum="1">
 
     <ImageView
-        android:layout_width="80dp"
-        android:layout_height="80dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
         android:src="@mipmap/ic_launcher"
         android:contentDescription="@string/activity_login_icon"/>
 
     <TextView
-        android:id="@+id/activity_login_btn"
+        android:id="@+id/login_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/spacing_medium"
         android:text="@string/activity_login_btn_text"
         style="@style/AppTheme.TextView.Clickable.2.White"/>
+
+    <TextView
+        android:id="@+id/sign_up_btn"
+        android:text="Sign up Dribbble"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/AppTheme.TextView.Clickable.2.White"
+        android:layout_weight="0.05" />
 
 </LinearLayout>
